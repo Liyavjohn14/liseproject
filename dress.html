@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>dress</title>
+</head>
+<body>
+    <div class="container p-4 mt-5">
+
+        <div class="row p-5 shadow-lg custom-round">
+            <div class="row text-center p-3">
+                <h1><u>Discover your Style</u></h1>
+            </div>
+
+            <!-- Form start here -->
+            <form id="select-form" action="">
+                <div class="row">
+                   
+                        
+                    
+                   
+
+                    
+
+                    
+
+                    <div class="col-6 mb-3">
+                        <label for="weight" class="form-label">Weight</label>
+                        <input type="text" class="form-control" id="weight" placeholder="Please enter your Weight:">
+                    </div>
+
+		    <div class="col-6 mb-3">
+                        <label for="height" class="form-label">Height</label>
+                        <input type="text" class="form-control" id="height" placeholder="Please enter your Height:">
+                    </div>
+                       <div class="col-6 mb-3">
+                        <label for="bust_size" class="form-label">Bust Size</label>
+                        <input type="text" class="form-control" id="bust_size" placeholder="Please enter your Bust_size:">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="age" placeholder="Please enter your Age:">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="Occasion" class="form-label">Occasion</label>
+                        <select class="form-select" id="occasion" aria-label="occasion" required>
+                            <option value="" selected>--select--</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Vaccation">Vaccation</option>
+                            <option value="Wedding">Formal</option>
+                            <option value="Vaccation">Party</option>
+                            <option value="Wedding">Date</option>
+                            
+                        </select>
+                    </div>
+                    
+                    <div class="col-12 d-flex justify-content-end">
+                      
+                        <button type="reset" class="btn btn-warning fw-bold shadow">
+                            Reset
+                        </button>
+                        <button type="submit" onclick="location.href='recom.html'" class="btn btn-primary fw-bold shadow">
+                            SUBMIT
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <!-- End of form -->
+
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let startYear = 1985;
+    let endYear = new Date().getFullYear();
+    let yearElement = document.getElementById('year')
+    for (i = endYear; i >= startYear; i--) {
+        yearElement.innerHTML = yearElement.innerHTML + `<option value="${i}">${i}</option>`
+    }
+</script>
+
+</html>
